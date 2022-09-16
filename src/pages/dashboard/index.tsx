@@ -1,16 +1,15 @@
 import type { ReactElement } from 'react';
-
-import type { NextPageWithLayout } from './_app';
+import type { NextPageWithLayout } from '../_app';
 
 const Page: NextPageWithLayout = () => {
   return <p>hello world</p>;
 };
 
-Page.getLayout = function DashboardLayout(page: ReactElement) {
+Page.getLayout = function getLayout(page: ReactElement) {
   return (
     <div>
-      <div>Dashboard</div>
-      {page}
+      <div>dd</div>
+      <div>{page}</div>
     </div>
   );
 };
